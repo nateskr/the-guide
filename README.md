@@ -1,11 +1,11 @@
 # the-guide
 
-A focused, long-form documentation repository for Git architecture, branching and history safety, and core system design fundamentals.
+Long-form documentation that standardizes Git architecture discipline and core system design fundamentals.
 
 ## Table of contents
 - [What this repository contains](#what-this-repository-contains)
 - [How to use this repo](#how-to-use-this-repo)
-- [Contribution standard](#contribution-standard)
+- [Contribution and branch discipline](#contribution-and-branch-discipline)
 - [Quick navigation](#quick-navigation)
 - [Status](#status)
 
@@ -39,16 +39,15 @@ You should be able to point to:
 - The corresponding Git practice that protects it.
 - The rollback strategy if the change violates the invariant.
 
-## Contribution standard
+## Contribution and branch discipline
 
-This repository is managed with an Infrastructure-as-Code mindset for documentation.
+This repository is managed with an Infrastructure-as-Code mindset for documentation. Keep contributions predictable and traceable:
 
-Recommended expectations for contributions:
-- One focused change per PR.
-- Clear commit intent using descriptive, human-readable branch names (avoid tool-prefixed naming).
-- No scope creep inside a single documentation change.
-- Prefer precise definitions, invariants, and real-world examples over opinionated filler.
-- Open pull requests from topic branches and keep `main` linear via rebase or squash merges.
+- Create topic branches from `main` using clear, human-readable names (e.g., `docs/master-architecture`, `feat/<scope>`); avoid tool-prefixed branch names.
+- Keep one cohesive objective per PR and avoid bundling unrelated edits.
+- Write intent-revealing commit messages and prefer rebasing topic branches over merging `main` into them.
+- Open pull requests for every change and merge with rebase or squash to maintain a linear history.
+- Apply branch protections on `main`: require PR review, passing checks, and block force pushes and deletions.
 
 ## Quick navigation
 
@@ -57,4 +56,4 @@ Recommended expectations for contributions:
 
 ## Status
 
-Active and evolving as the standards mature. Primary priority is maintaining strict scope, accuracy, and long-term readability.
+Active and evolving as the standards mature. The priority is maintaining strict scope, accuracy, and long-term readability.
