@@ -1,13 +1,13 @@
 # the-guide
 
-A focused, long-form documentation repository for **Git architecture**, **branching and history safety**, and **core system design fundamentals**.
+Long-form documentation that standardizes Git architecture discipline and core system design fundamentals.
 
-This repo is intended to be a durable reference you can use as:
-- A practical operating standard for day-to-day Git work.
-- A high-level architectural map for designing and reviewing systems.
-- A consistent source of truth for team conventions.
-
----
+## Table of contents
+- [What this repository contains](#what-this-repository-contains)
+- [How to use this repo](#how-to-use-this-repo)
+- [Contribution and branch discipline](#contribution-and-branch-discipline)
+- [Quick navigation](#quick-navigation)
+- [Status](#status)
 
 ## What this repository contains
 
@@ -17,8 +17,6 @@ This repo is intended to be a durable reference you can use as:
     1. Git branching and history management concepts grounded in official Git documentation and the Pro Git book.
     2. The repository’s canonical **seven design fundamentals**.
     3. A cross-mapping that shows how Git practices operationally support those fundamentals.
-
----
 
 ## How to use this repo
 
@@ -41,38 +39,21 @@ You should be able to point to:
 - The corresponding Git practice that protects it.
 - The rollback strategy if the change violates the invariant.
 
----
+## Contribution and branch discipline
 
-## Contribution standard
+This repository is managed with an Infrastructure-as-Code mindset for documentation. Keep contributions predictable and traceable:
 
-This repository is managed with an Infrastructure as Code mindset for documentation.
-
-Recommended expectations for contributions:
-- One focused change per PR.
-- Clear commit intent.
-- No scope creep inside a single documentation change.
-- Prefer precise definitions, invariants, and real-world examples over opinionated filler.
-
----
-
-## Repository intent
-
-This is a **reference-first** repository.
-The goal is clarity, durability, and operational usefulness:
-- Clean structure.
-- Stable terminology.
-- Examples that reflect real engineering tradeoffs.
-
----
+- Create topic branches from `main` using clear, human-readable names (e.g., `docs/master-architecture`, `feat/<scope>`); avoid tool-prefixed branch names.
+- Keep one cohesive objective per PR and avoid bundling unrelated edits.
+- Write intent-revealing commit messages and prefer rebasing topic branches over merging `main` into them.
+- Open pull requests for every change and merge with rebase or squash to maintain a linear history.
+- Apply branch protections on `main`: require PR review, passing checks, and block force pushes and deletions.
 
 ## Quick navigation
 
-- **Master Standard:** `MASTER_ARCHITECTURE.md`
+- **Master Standard:** [`MASTER_ARCHITECTURE.md`](./MASTER_ARCHITECTURE.md)
 - Additional standards and topic-specific guides can be added later under a consistent naming scheme.
-
----
 
 ## Status
 
-Active and evolving as the standards mature.
-Primary priority is maintaining strict scope, accuracy, and long-term readability.
+Active and evolving as the standards mature. The priority is maintaining strict scope, accuracy, and long-term readability.
