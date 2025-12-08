@@ -4,8 +4,7 @@ A focused, long-form documentation repository for **Git architecture**, **branch
 
 This repo is intended to be a durable reference you can use as:
 - A practical operating standard for day-to-day Git work.
-- A high-level architectural map for designing and reviewing systems.
-- A consistent source of truth for team conventions.
+- An architectural map for designing and reviewing systems.
 
 ---
 
